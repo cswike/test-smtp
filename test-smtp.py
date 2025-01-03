@@ -11,7 +11,6 @@ def test_smtp(from_str, to_str, cc_str, subject_str, account, pw):
     smtp = smtplib.SMTP('smtp.yoursever.net',587)
     smtp.ehlo()
     smtp.starttls()
-    smtp.ehlo()
     smtp.login(account, pw)
 
     print("Test socket - should NOT get None")
